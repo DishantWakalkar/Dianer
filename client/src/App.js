@@ -1,28 +1,25 @@
 import React, {useEffect, useState} from 'react'
+// import BarChart from './components/BarChart'
+import LineChart from './components/LineChart'
+// import PieChart from './components/PieChart'
 
 function App() {
 
   const [backendData, setBackendData] = useState([{}])
 
-  useEffect(() => {
-    fetch("/getGrades").then(
-      response => response.json()
-    ).then(
-      data => {
-        setBackendData(data)
-      }
-    )
-  }, [])
+  // useEffect(() => {
+  //   fetch("/getGrades").then(
+  //     response => response.json()
+  //   ).then(
+  //     data => {
+  //       setBackendData(data)
+  //     }
+  //   )
+  // }, [])
 
   return (
     <div>
-        {(typeof backendData.data == 'undefined') ? (
-          <p>Loading ...</p>
-        ) : (
-          backendData.data.map((data, i) => (
-            <p key={i}>{data}</p>
-          ))
-        )}
+        <LineChart/>
     </div>
   )
 }
