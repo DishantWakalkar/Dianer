@@ -20,8 +20,9 @@ function App() {
 
   return (
     <div>
-        <BarChart/>
+        {/* <BarChart/> */}
         {/* <Table/> */}
+        Hello
     </div>
   )
 }
