@@ -21,6 +21,7 @@ app.use((req, res, next) => {
 });
 
 app.use("/getGrades/", homeRoute);
+app.use("/getDevice/", homeRoute);
 app.listen(port, () => {
   console.log(`Server running on port http://localhost:${port}`);
 });

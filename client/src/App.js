@@ -1,11 +1,12 @@
-import React, {useEffect, useState} from 'react'
-// import BarChart from './components/BarChart'
-import LineChart from './components/LineChart'
+import React from 'react'
+import BarChart from './components/BarChart'
+// import LineChart from './components/LineChart'
 // import PieChart from './components/PieChart'
+// import Table from './components/Table'
 
 function App() {
 
-  const [backendData, setBackendData] = useState([{}])
+  // const [backendData, setBackendData] = useState([{}])
 
   // useEffect(() => {
   //   fetch("/getGrades").then(
@@ -19,7 +20,8 @@ function App() {
 
   return (
     <div>
-        <LineChart/>
+        <BarChart/>
+        {/* <Table/> */}
     </div>
   )
 }
