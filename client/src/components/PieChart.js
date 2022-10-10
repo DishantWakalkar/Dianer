@@ -5,7 +5,6 @@ export default function PieChart() {
     labels: ["Go", "Python", "Kotlin", "JavaScript", "R", "Swift"],
     datasets: [
       {
-        label: "# of Votes",
         data: [35, 25, 22, 20, 18, 15],
         backgroundColor: [
           "#007D9C",
@@ -26,6 +25,15 @@ export default function PieChart() {
         borderWidth: 1,
       },
     ],
+    // new Chart("myChart", {
+    //   type: "pie",
+    //   data: {
+    //     labels: xValues,
+    //     datasets: [{
+    //       backgroundColor: barColors,
+    //       data: yValues
+    //     }]
+    //   },
   };
   return (
     <div style={{ width: 650, textAlign: "center" }}>
