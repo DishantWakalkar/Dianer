@@ -2,7 +2,7 @@ import React from 'react'
 import BarChart from './components/BarChart'
 // import LineChart from './components/LineChart'
 // import PieChart from './components/PieChart'
-// import Table from './components/Table'
+import Topbar from './components/topbar/Topbar'
 
 function App() {
 
@@ -22,7 +22,7 @@ function App() {
     <div>
         {/* <BarChart/> */}
         {/* <Table/> */}
-        Hello
+        <Topbar/>
     </div>
   )
 }

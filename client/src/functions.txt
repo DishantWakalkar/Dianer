@@ -1,0 +1,14 @@
+// const [backendData, setBackendData] = useState([{}])
+
+  // useEffect(() => {
+  //   fetch("/getGrades").then(
+  //     response => response.json()
+  //   ).then(
+  //     data => {
+  //       setBackendData(data)
+  //     }
+  //   )
+  // }, [])
+
+// backendData.map(a=>a.userid)
+  
