@@ -1,11 +1,27 @@
+import React, {useEffect, useState} from "react";
 import { Pie } from "react-chartjs-2";
 import Chart from "chart.js/auto";
-export default function PieChart() {
+const PieChart = () => {
+  
+  
+  const [backendData, setBackendData] = useState([{}])
+
+  useEffect(() => {
+    fetch("/getcoursecatC").then(
+      response => response.json()
+    ).then(
+      data => {
+        setBackendData(data)
+      }
+    )
+  }, [])   
+
   const data = {
-    labels: ["Go", "Python", "Kotlin", "JavaScript", "R", "Swift"],
+    labels: backendData.map(d=>d.name) ,
     datasets: [
       {
-        data: [35, 25, 22, 20, 18, 15],
+        type:"pie",
+        data:backendData.map(a=>a.coursecount),
         backgroundColor: [
           "#007D9C",
           "#244D70",
@@ -36,11 +52,12 @@ export default function PieChart() {
     //   },
   };
   return (
-    <div style={{ width: 650, textAlign: "center" }}>
+    <div style={{ textAlign: "center" }}>
       <h1 style={{ fontFamily: "monospace" }}>
-        Most Popular Programming languages to learn in 2022
+        Course Categories 2022
       </h1>
-      <Pie data={data} width={50} height={50} />
+      <Pie data={data} />
     </div>
   );
 }
+export default PieChart;

@@ -1,9 +1,10 @@
-.container{
+.center {
     display: flex;
-    margin-top: 10px;
+    flex-direction: column;
+    align-items: center;
 }
 
-.link{
-    text-decoration: none;
-    color: inherit;
+.nav-button{
+    display:flex;
+    align-items: center;
 }
