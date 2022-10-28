@@ -1,6 +1,7 @@
 import React, {useEffect, useState} from "react";
 import Chart from "chart.js/auto";
 import { Line } from "react-chartjs-2";
+import Card from 'react-bootstrap/Card';
 const LineChart = () => {
   
   
@@ -30,7 +31,12 @@ const data = {
 
   return (
     <div>
-      <Line data={data} />
+       <Card style={{ width: 'auto' }}>
+        <Card.Body>
+          <Line data={data} />
+        </Card.Body>
+       </Card>
+      
     </div>
 
   );

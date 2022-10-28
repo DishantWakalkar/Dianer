@@ -1,6 +1,6 @@
 import React, {useEffect, useState} from "react";
 import { Pie } from "react-chartjs-2";
-import Chart from "chart.js/auto";
+import Card from 'react-bootstrap/Card';
 const PieChart = () => {
   
   
@@ -53,10 +53,14 @@ const PieChart = () => {
   };
   return (
     <div style={{ textAlign: "center" }}>
-      <h1 style={{ fontFamily: "monospace" }}>
-        Course Categories 2022
-      </h1>
-      <Pie data={data} />
+      <Card style={{ width: 'auto' }}>
+        <Card.Body>
+          <h1 style={{ fontFamily: "monospace" }}>
+          Course Categories 2022
+          </h1>
+          <Pie data={data} />
+        </Card.Body>
+       </Card>
     </div>
   );
 }

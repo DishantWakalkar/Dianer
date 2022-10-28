@@ -1,6 +1,7 @@
 import React, {useState,useEffect} from "react";
 import Chart from "chart.js/auto";
 import { Scatter } from "react-chartjs-2";
+import Card from 'react-bootstrap/Card';
 
 const ScatterChart = () => {
 
@@ -25,7 +26,11 @@ const ScatterChart = () => {
   };
   return (
     <div>
-      <Scatter data={data} />
+      <Card style={{ width: 'auto' }}>
+        <Card.Body>
+          <Scatter data={data} />
+        </Card.Body>
+       </Card>
     </div>
   );
 };
