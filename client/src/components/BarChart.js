@@ -1,29 +1,17 @@
-import React, {useEffect, useState} from "react";
-import Chart from "chart.js/auto";  
+import React from "react";
+import Chart from "chart.js/auto";
 import { Bar } from "react-chartjs-2";
 
 const BarChart = () => {
-  
-  
-  const [backendData, setBackendData] = useState([{}])
-
-  useEffect(() => {
-    fetch("/getGrades").then(
-      response => response.json()
-    ).then(
-      data => {
-        setBackendData(data)
-      }
-    )
-  }, [])   
-  
+  const labels = ["January", "February", "March", "April", "May", "June"];
   const data = {
-    labels: backendData.map(a=>a.userid),
+    labels: labels,
     datasets: [
       {
-        borderColor: "rgb(0, 0, 0)",
-        backgroundColor: "rgb(144,238,144)",
-        data: backendData.map(d=>d.grade),
+        label: "My First dataset",
+        backgroundColor: "rgb(255, 99, 132)",
+        borderColor: "rgb(255, 99, 132)",
+        data: [0, 10, 5, 2, 20, 30, 45],
       },
     ],
   };
