@@ -164,15 +164,15 @@ const Sidebar = () => {
           <Item
             onClick={() => setClick(false)}
             activeClassName="active"
-            to="/team"
+            to="/QuizGrade"
           >
             <img src={Team} alt="Team" />
-            <Text clicked={click}>Submitted Assignments</Text>
+            <Text clicked={click}>Quiz Grade</Text>
           </Item>
           <Item
             onClick={() => setClick(false)}
             activeClassName="active"
-            to="/calender"
+            to="/CoursesCategories"
           >
             <img src={Calender} alt="Calender" />
             <Text clicked={click}>Courses Categories</Text>
@@ -180,15 +180,15 @@ const Sidebar = () => {
           <Item
             onClick={() => setClick(false)}
             activeClassName="active"
-            to="/documents"
+            to="/Attendance"
           >
             <img src={Documents} alt="Documents" />
-            <Text clicked={click}>Attendance</Text>
+            <Text clicked={click}>Course Completed</Text>
           </Item>
           <Item
             onClick={() => setClick(false)}
             activeClassName="active"
-            to="/projects"
+            to="/OverallGrades"
           >
             <img src={Projects} alt="Projects" />
             <Text clicked={click}>Overall Grades</Text>

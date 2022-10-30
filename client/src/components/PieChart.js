@@ -23,12 +23,10 @@ const PieChart = () => {
         type:"pie",
         data:backendData.map(a=>a.coursecount),
         backgroundColor: [
+          "#D7A1F9",
+          "#CE8CF8",
           "#B24BF3",
-          "#A020F0",
-          "#9417E2",
           "#880ED4",
-          "#fff",
-          "#FE452A",
         ],
         borderColor: [
           "rgba(0,0,0,1)",
@@ -55,9 +53,9 @@ const PieChart = () => {
     <div style={{ textAlign: "center" }}>
       <Card style={{ width: 'auto' }}>
         <Card.Body>
-          <h1 style={{ fontFamily: "monospace" }}>
+          <h2 style={{ fontFamily: "monospace", fontSize:"38px" }}>
           Course Categories 2022
-          </h1>
+          </h2>
           <Pie data={data} />
         </Card.Body>
        </Card>

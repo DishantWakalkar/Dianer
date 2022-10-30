@@ -19,7 +19,7 @@ const ScatterChart = () => {
 
   const data = {
     datasets: [{
-      label: 'Attendence Log',
+      label: 'Course Completed',
       data: backendData,
       backgroundColor: 'rgba(75, 192, 192, 1)'
     }],
@@ -27,8 +27,10 @@ const ScatterChart = () => {
   return (
     <div>
       <Card style={{ width: 'auto' }}>
+      <p style={{textAlign:'left', fontSize:'16px', margin:'350px 0px 0px -19px', position:"absolute", transform:'rotate(-90deg)'}}>CourseID</p>
         <Card.Body>
-          <Scatter data={data} />
+          <Scatter data={data}/>
+          <p style={{textAlign:'center', fontSize:'16px', marginTop:'10px'}}>UserID</p>
         </Card.Body>
        </Card>
     </div>

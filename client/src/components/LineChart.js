@@ -18,13 +18,20 @@ const LineChart = () => {
   }, []) 
 
 const data = {
+  
   labels: backendData.map(d=>d.userid),
   datasets: [
     {
       label: "Grade",
-      backgroundColor: "rgb(255, 99, 132)",
-      borderColor: "rgba(54, 162, 235, 1)",
+      backgroundColor: "SKYBLUE",
+      borderColor: "#2085ec",
       data: backendData.map(a=>a.grade),
+    },
+    {
+      label: "Grader",
+      backgroundColor: "LIGHTGREEN",
+      borderColor: "#02824b",
+      data: backendData.map(a=>a.grader),
     },
   ],
 };
@@ -34,6 +41,7 @@ const data = {
        <Card style={{ width: 'auto' }}>
         <Card.Body>
           <Line data={data} />
+          <p style={{textAlign:'center', fontSize:'14px'}}>UserID</p> 
         </Card.Body>
        </Card>
       

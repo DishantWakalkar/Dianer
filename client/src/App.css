@@ -12,26 +12,36 @@
 }
 
 .pie-chart{
-    width: 500px;
-    height: auto; 
+    width: auto;
+    height: 427px; 
     padding: 10px;
+    position: absolute;
+    margin: 0px -800px -150px 0px;
 }
 
 .line-chart{
     width: 800px;
     height: auto;
     padding: 10px;
+    position: absolute;
+    margin: 0px 700px -450px 0px;
 }
 
 .bar-chart{
     width: 800px;
     height: auto;
     padding: 10px;
+    position: absolute;
+    margin: 0px 700px 450px 0px;
 }
 
 .scatter-chart{
     width: 800px;
     height: auto;
     padding: 10px;
+}
+
+.stats-card{
+    margin: 0px -800px 500px 0px;
 }
 

@@ -12,10 +12,10 @@ import styled from "styled-components";
 import { AnimatePresence } from "framer-motion";
 import { Route, Routes, useLocation } from "react-router";
 import Home from "./Pages/Home";
-import Team from "./Pages/Team";
-import Calender from "./Pages/Calender";
-import Documents from "./Pages/Documents";
-import Projects from "./Pages/Projects";
+import QuizGrade from "./Pages/QuizGrade";
+import CoursesCategories from "./Pages/CoursesCategories";
+import Attendance from "./Pages/Attendance";
+import OverallGrades from "./Pages/OverallGrades";
 
 const Pages = styled.div`
   width: 100vw;
@@ -60,10 +60,10 @@ function App() {
         <AnimatePresence exitBeforeEnter>
           <Routes location={location} key={location.pathname}>
             <Route exact path="/" element={<Home/>} />
-            <Route path="/team" element={<Team/>} />
-            <Route path="/calender" element={<Calender/>} />
-            <Route path="/documents" element={<Documents/>} />
-            <Route path="/projects" element={<Projects/>} />
+            <Route path="/QuizGrade" element={<QuizGrade/>} />
+            <Route path="/CoursesCategories" element={<CoursesCategories/>} />
+            <Route path="/Attendance" element={<Attendance/>} />
+            <Route path="/OverallGrades" element={<OverallGrades/>} />
           </Routes>
         </AnimatePresence>
       </Pages>
