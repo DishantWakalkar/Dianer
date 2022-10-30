@@ -1,10 +1,10 @@
 
 import { Navbar, Container } from 'react-bootstrap';
-import logo from '../assests/Logo.png';
+import logo from '../assets/Logo.png';
 function BrandExample() {
   return (
     <>
-      <Navbar bg="dark" variant="dark">
+      <Navbar bg="black" variant="black">
         <Container>
           <Navbar.Brand href="#home">
             <img
@@ -13,6 +13,7 @@ function BrandExample() {
               width="90"
               height="30"
               className="d-inline-block align-center"
+              style={{flexDirection:'column'}}
             />{' '}
           </Navbar.Brand>
         </Container>

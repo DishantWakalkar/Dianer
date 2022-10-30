@@ -21,7 +21,7 @@ const data = {
   labels: backendData.map(d=>d.userid),
   datasets: [
     {
-      label: "My First dataset",
+      label: "Grade",
       backgroundColor: "rgb(255, 99, 132)",
       borderColor: "rgba(54, 162, 235, 1)",
       data: backendData.map(a=>a.grade),
